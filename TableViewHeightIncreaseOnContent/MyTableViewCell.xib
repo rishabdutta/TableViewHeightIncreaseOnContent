@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="TableViewHeightIncreaseOnContent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRX-xA-y9e">
+                        <rect key="frame" x="240" y="6" width="45" height="30"/>
+                        <state key="normal" title="Delete">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="deletePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="c9j-qm-x9g"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPm-kt-17C">
+                        <rect key="frame" x="290" y="6" width="30" height="30"/>
+                        <state key="normal" title="Add">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qnt-fv-Pkv"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tRX-xA-y9e" secondAttribute="bottom" constant="7.5" id="K81-Hs-eA6"/>
+                    <constraint firstAttribute="bottom" secondItem="YPm-kt-17C" secondAttribute="bottom" constant="7.5" id="Kgr-hx-UGh"/>
+                    <constraint firstItem="YPm-kt-17C" firstAttribute="leading" secondItem="tRX-xA-y9e" secondAttribute="trailing" constant="5" id="QRT-4z-vh6"/>
+                    <constraint firstItem="YPm-kt-17C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Uhe-i2-wCu"/>
+                    <constraint firstItem="YPm-kt-17C" firstAttribute="leading" secondItem="tRX-xA-y9e" secondAttribute="trailing" constant="5" id="gii-1v-Sgn"/>
+                    <constraint firstItem="tRX-xA-y9e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="jwR-dV-juE"/>
+                    <constraint firstItem="tRX-xA-y9e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="240" id="n3n-6J-QLe"/>
+                    <constraint firstAttribute="trailing" secondItem="YPm-kt-17C" secondAttribute="trailing" id="n9E-32-ROy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+        </tableViewCell>
+    </objects>
+</document>
